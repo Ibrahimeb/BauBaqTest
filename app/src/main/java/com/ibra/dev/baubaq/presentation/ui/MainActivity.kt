@@ -1,4 +1,4 @@
-package com.ibra.dev.baubaq
+package com.ibra.dev.baubaq.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
