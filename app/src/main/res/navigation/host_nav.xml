@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.ibra.dev.baubaq.presentation.ui.fragment.LoginFragment"
+        android:name="com.ibra.dev.baubaq.login.presentation.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -19,10 +19,10 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.ibra.dev.baubaq.presentation.ui.fragment.RegisterFragment"
+        android:name="com.ibra.dev.baubaq.register.presentation.ui.RegisterFragment"
         android:label="RegisterFragment" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ibra.dev.baubaq.presentation.ui.fragment.HomeFragment"
+        android:name="com.ibra.dev.baubaq.home.HomeFragment"
         android:label="HomeFragment" />
 </navigation>

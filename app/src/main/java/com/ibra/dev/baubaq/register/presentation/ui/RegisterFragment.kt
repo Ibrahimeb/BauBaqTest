@@ -1,4 +1,4 @@
-package com.ibra.dev.baubaq.presentation.ui.fragment
+package com.ibra.dev.baubaq.register.presentation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
