@@ -11,7 +11,9 @@ class LoginUseCaseImpl @Inject constructor(
         return repository.isLoginAlReady()
     }
 
-    override fun verifyCredentials(user: String, password: String) {
-
+    override fun verifyCredentials(user: String, password: String): Boolean {
+        val loginIsAlready = repository.userExist(user) && repository.verifyPassWord(password)
+        repository.setIfLoginAlReady(loginIsAlready)
+        return loginIsAlready
     }
 }

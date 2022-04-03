@@ -4,5 +4,5 @@ interface LoginUseCase {
 
     fun isAlreadyLogin(): Boolean
 
-    fun verifyCredentials(user: String, password: String)
+    fun verifyCredentials(user: String, password: String) : Boolean
 }

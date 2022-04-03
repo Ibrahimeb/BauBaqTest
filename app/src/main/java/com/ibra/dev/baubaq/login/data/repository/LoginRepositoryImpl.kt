@@ -5,10 +5,14 @@ import com.ibra.dev.baubaq.login.domain.repository.LoginRepository
 import javax.inject.Inject
 
 class LoginRepositoryImpl @Inject constructor(
-    val loginPreference: LoginPreference
+    private val loginPreference: LoginPreference
 ) : LoginRepository {
     override fun isLoginAlReady(): Boolean {
-        return false
+        return loginPreference.isAlreadyLogin()
+    }
+
+    override fun setIfLoginAlReady(isAlready: Boolean) {
+        loginPreference.setIfAlreadyLogin(isAlready)
     }
 
     override fun userExist(user: String): Boolean {

@@ -10,11 +10,12 @@
         android:id="@+id/nav_host_fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:name="com.ibra.dev.baubaq.login.presentation.ui.LoginFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:defaultNavHost="true"
         app:navGraph="@navigation/host_nav"
         />

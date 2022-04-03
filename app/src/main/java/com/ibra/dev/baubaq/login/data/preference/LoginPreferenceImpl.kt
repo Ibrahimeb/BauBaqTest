@@ -26,7 +26,7 @@ class LoginPreferenceImpl @Inject constructor(
     }
 
     override fun reset() {
-        TODO("Not yet implemented")
+        preference.edit().clear().apply()
     }
 
     private companion object {

@@ -5,11 +5,12 @@ import com.ibra.dev.baubaq.login.data.preference.LoginPreferenceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
 import dagger.hilt.android.components.ActivityRetainedComponent
 import dagger.hilt.android.components.FragmentComponent
 import dagger.hilt.android.components.ViewModelComponent
 
-@InstallIn(ViewModelComponent::class)
+@InstallIn(ActivityRetainedComponent::class)
 @Module
 abstract class LoginPreferenceModule {
     @Binds
